@@ -1,0 +1,132 @@
+# Default Sources Configuration
+# This file defines the default sources for keynote-tracker
+# User configuration is stored at: ~/.config/keynote-tracker/sources.yaml
+
+sources:
+  nvidia:
+    name: "NVIDIA"
+    description: "NVIDIA Blog and Developer News"
+    feeds:
+      - type: rss
+        url: "https://blogs.nvidia.com/feed/"
+        category: "blog"
+        limit: 20
+        fields:
+          title: "title"
+          date: "pubDate"
+          description: "contentSnippet"
+          content: "content"
+          link: "link"
+          tags: "categories"
+      - type: rss
+        url: "https://developer.nvidia.com/blog/feed/"
+        category: "developer"
+        limit: 15
+        fields:
+          title: "title"
+          date: "pubDate"
+          description: "contentSnippet"
+          content: "content"
+          link: "link"
+          tags: "categories"
+
+  meta:
+    name: "Meta"
+    description: "Meta Newsroom and Engineering Blog"
+    feeds:
+      - type: rss
+        url: "https://about.fb.com/feed/"
+        category: "newsroom"
+        limit: 20
+        fields:
+          title: "title"
+          date: "pubDate"
+          description: "contentSnippet"
+          content: "content"
+          link: "link"
+          tags: "categories"
+      - type: rss
+        url: "https://engineering.fb.com/feed/"
+        category: "engineering"
+        limit: 15
+        fields:
+          title: "title"
+          date: "pubDate"
+          description: "contentSnippet"
+          content: "content"
+          link: "link"
+          tags: "categories"
+
+  google:
+    name: "Google"
+    description: "Google Blog and Android Developers"
+    feeds:
+      - type: rss
+        url: "https://blog.google/rss/"
+        category: "blog"
+        limit: 20
+        fields:
+          title: "title"
+          date: "pubDate"
+          description: "contentSnippet"
+          content: "content"
+          link: "link"
+          tags: "categories"
+      - type: rss
+        url: "https://android-developers.googleblog.com/feeds/posts/default"
+        category: "android"
+        limit: 15
+        fields:
+          title: "title"
+          date: "pubDate"
+          description: "contentSnippet"
+          content: "content"
+          link: "link"
+          tags: "categories"
+
+  apple:
+    name: "Apple"
+    description: "Apple Newsroom and Developer News"
+    feeds:
+      - type: rss
+        url: "https://www.apple.com/newsroom/rss-feed.rss"
+        category: "newsroom"
+        limit: 30
+        fields:
+          title: "title"
+          date: "pubDate"
+          description: "contentSnippet"
+          content: "content:encoded"
+          contentFallback: "content"
+          link: "link"
+          tags: "categories"
+      - type: rss
+        url: "https://developer.apple.com/news/rss/news.rss"
+        category: "developer"
+        limit: 20
+        fields:
+          title: "title"
+          date: "pubDate"
+          description: "contentSnippet"
+          content: "content:encoded"
+          contentFallback: "content"
+          link: "link"
+          tags: "categories"
+
+  cursor:
+    name: "Cursor"
+    description: "Cursor IDE Releases and Updates"
+    feeds:
+      - type: github
+        repo: "getcursor/cursor"
+        category: "release"
+        limit: 20
+        fields:
+          title: "name"
+          titleFallback: "tag_name"
+          date: "published_at"
+          dateFallback: "created_at"
+          description: "body"
+          content: "body"
+          link: "html_url"
+        tagLogic: "prerelease ? ['prerelease'] : ['release']"

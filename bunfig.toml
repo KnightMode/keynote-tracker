@@ -1,0 +1,11 @@
+[install]
+# Configure package manager
+auto = true
+production = false
+optional = true
+
+[run]
+# Bun runtime configuration
+bun = true
+silent = false
+

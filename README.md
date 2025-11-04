@@ -2,6 +2,8 @@
 
 A modern, interactive CLI tool to track the latest announcements from major tech keynotes and events. Built with Bun and Ink for a beautiful terminal experience.
 
+![Keynote Tracker](image.png)
+
 ## ✨ Features
 
 - 🎨 **ASCII Art Banner** - Eye-catching startup screen with branded ASCII art

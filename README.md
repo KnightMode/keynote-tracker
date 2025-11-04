@@ -4,6 +4,10 @@ A modern, interactive CLI tool to track the latest announcements from major tech
 
 ![Keynote Tracker](image.png)
 
+### 🎬 Demo
+
+![Demo](demo.gif)
+
 ## ✨ Features
 
 - 🎨 **ASCII Art Banner** - Eye-catching startup screen with branded ASCII art
